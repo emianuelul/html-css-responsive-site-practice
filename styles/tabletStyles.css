@@ -1,0 +1,90 @@
+@media (min-width: 601px) and (max-width: 1199px){
+    :root{
+        --section-gap: 6rem;
+    }
+
+    .hero{
+        position: relative;
+        padding: 2rem 8rem;
+        padding-top: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero picture{
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 5vw;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+    }
+
+    .hero picture::after{
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .description{
+        background-color: white;
+        padding: 2rem;
+        padding-top: 8rem;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 1.25rem;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+        width: 80%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .description h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .description > p{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .description > .icons{
+        justify-content: center;
+    }
+    
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 6rem;
+    }
+
+    .projects > h1{
+        grid-column: 1/3;
+    }
+
+    .contact{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .contact picture{
+        width: 60%;
+        height: auto;
+    }
+
+    .contact-main{
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width:1199px) and (orientation: portrait){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 4rem;
+    }
+}
